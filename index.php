@@ -107,7 +107,7 @@ echo '<br/>';
 
 // Definirea variabilelor
 $a = 20;
-$b = 5;
+$b = 0;
 $operatie = "+"; 
 $rezultat = 0;
 
@@ -127,15 +127,20 @@ switch ($operatie) {
         if ($b != 0) {
             $rezultat = $a / $b;
         } else {
-            echo "Impartirea la 0 nu este permisa!";
+            echo "$rezultat = $a";
         }
         break;
-    default:
-        echo "Operatie invalida!";
+    
 }
 
 // Afisarea rezultatului
 echo "Rezultatul: $a $operatie $b = $rezultat";
+echo '<br/>';
 
+function adunare ($a, $b) {
+    return $a + $b;
+}
+$a = 53;
+$b = 67;
 
 

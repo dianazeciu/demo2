@@ -104,5 +104,45 @@ echo '<br/>';
 $x = 7; 
 $y = ($x%2)? 'impar' : 'par';
 var_dump ($y);
+echo '<br/>';
 
+// daca locul 1 are 1000 pct, daca locul 2 are 800 pct; daca locul 3 si 4 are 600 pct 
+$a = 53;
+$b = 67;
+function adunare($a, $b){
+    return $a + $b;
+}
+echo adunare ($a, $b);
+// http://localhost/curs3/index.php
+echo '<br/>';
+function scadere($a, $b){
+    return ($a - $b);
+}
+echo scadere ($a, $b);
+echo '<br/>';
+function inmultire($a, $b){
+    return ($a * $b);
+}
+echo inmultire ($a, $b); 
+echo '<br/>';
+function impartire($a, $b){
+    // case ($b = 0)? "1" : "$b"; - varianta mea dar gresita
+    $b = $b == 0 ? 1 : $b;
+    return ($a/$b);
+}
+echo impartire ($a, $b);
+// tema 4 
+// creati o functie 3 parametri ; daca par 2 si 3 sunt 0 sau < 0, at vor primi in interiorul functiei valoarea 1 , respectiv 2. 
+echo '<br/>';
 
+function operatiiConditii ($param1, $param2, $param3){
+    $param2 = $param2 <= 0 ? 1 : $param2;
+    $param3 = $param3 <= 0 ? 2 : $param3;
+    if (($param1 - $param2) >5 && ($param3 % 2) == 0){
+        echo "Rezaultatul este: " . (($param1 / $param2) ** $param2);
+    } else {
+        echo "rip.";
+    }
+}
+echo operatiiConditii (5, 8, 12);
+// cum salvam pe git 
