@@ -25,5 +25,5 @@ if (isset($_SESSION['counter'])) {
 }
 echo 'You visited this page' . ' ' . $_SESSION['counter'] . ' ' . 'times.';
 
-//unset ($_SESSION['counter']);
-session_destroy();
+//unset ($_SESSION['counter']); - cu asta scot doar o intrare
+session_destroy(); // aici se scot toate 
